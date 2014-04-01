@@ -1,0 +1,31 @@
+[INFO] org.squashtest.ta.backbone.init.ComponentPackagesEnumerator - Listing sqhashTA engine component packages
+[INFO] org.squashtest.ta.backbone.init.ComponentManifestParser - Loading plugin configuration for: org.squashtest.ta.enginecore
+[INFO] org.squashtest.ta.backbone.init.ComponentManifestParser - Loading plugin configuration for: org.squashtest.ta.plugin.commons-component
+[INFO] org.squashtest.ta.backbone.init.ComponentManifestParser - Loading plugin configuration for: org.squashtest.ta.plugin.filechecker
+[INFO] org.squashtest.ta.backbone.init.ComponentManifestParser - Loading plugin configuration for: org.squashtest.ta.plugin.sahi
+[INFO] org.squashtest.ta.backbone.init.ComponentManifestParser - Loading plugin configuration for: org.squashtest.ta.plugin.selenium
+[INFO] org.squashtest.ta.backbone.init.ComponentManifestParser - Loading plugin configuration for: org.squashtest.ta.plugin.soapui
+[INFO] org.squashtest.ta.backbone.init.ComponentManifestParser - Loading plugin configuration for: org.squashtest.ta.plugin.ftp
+[INFO] org.squashtest.ta.backbone.init.ComponentManifestParser - Loading plugin configuration for: org.squashtest.ta.plugin.db
+[INFO] org.squashtest.ta.backbone.init.ComponentManifestParser - Loading plugin configuration for: org.squashtest.ta.plugin.ssh
+[WARN] org.squashtest.ta.api.execution.client.ClientFactory - Rest client configurer : No Squash TA configuration file for TM credentials was given in maven command line argument. No credentials will be used
+[ERROR] org.squashtest.ta.backbone.engine.impl.EventManagerImpl - Event misfired on listener org.squashtest.ta.link.RestTestSuiteStatusUpdateListener@15b555
+java.lang.IllegalArgumentException: Template parameter value is set to null
+	at org.apache.cxf.jaxrs.impl.UriBuilderImpl.buildFromEncoded(UriBuilderImpl.java:213)
+	at org.apache.cxf.jaxrs.client.ClientProxyImpl.invoke(ClientProxyImpl.java:157)
+	at org.squashtest.ta.api.execution.client.$Proxy34.updateTestSuiteExecutionStatus(Unknown Source)
+	at org.squashtest.ta.link.RestTestSuiteStatusUpdateListener.handle(RestTestSuiteStatusUpdateListener.java:53)
+	at org.squashtest.ta.framework.test.event.TestSuiteStatusUpdate.fire(TestSuiteStatusUpdate.java:35)
+	at org.squashtest.ta.backbone.engine.impl.EventManagerImpl.dispatchEvent(EventManagerImpl.java:101)
+	at org.squashtest.ta.backbone.engine.impl.EventManagerImpl.run(EventManagerImpl.java:80)
+	at java.lang.Thread.run(Thread.java:679)
+[ERROR] org.squashtest.ta.backbone.engine.impl.EventManagerImpl - Event misfired on listener org.squashtest.ta.link.RestTestSuiteStatusUpdateListener@15b555
+java.lang.IllegalArgumentException: Template parameter value is set to null
+	at org.apache.cxf.jaxrs.impl.UriBuilderImpl.buildFromEncoded(UriBuilderImpl.java:213)
+	at org.apache.cxf.jaxrs.client.ClientProxyImpl.invoke(ClientProxyImpl.java:157)
+	at org.squashtest.ta.api.execution.client.$Proxy34.updateTestSuiteExecutionStatus(Unknown Source)
+	at org.squashtest.ta.link.RestTestSuiteStatusUpdateListener.handle(RestTestSuiteStatusUpdateListener.java:53)
+	at org.squashtest.ta.framework.test.event.TestSuiteStatusUpdate.fire(TestSuiteStatusUpdate.java:35)
+	at org.squashtest.ta.backbone.engine.impl.EventManagerImpl.dispatchEvent(EventManagerImpl.java:101)
+	at org.squashtest.ta.backbone.engine.impl.EventManagerImpl.run(EventManagerImpl.java:88)
+	at java.lang.Thread.run(Thread.java:679)
